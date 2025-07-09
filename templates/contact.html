@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Hello from contact</h1>
+    <nav
+      class="flex justify-between items-center px-10 py-5 bg-white bg-opacity-90 border-b border-blue-200 shadow-sm"
+    >
+      <div class="flex items-center gap-2">
+        <img src="{% static 'image/logo.png' %}" alt="Logo" class="h-8 w-8" />
+        <span class="font-bold text-sky-700 text-xl">Karina</span>
+      </div>
+      <ul class="flex gap-8 text-sm font-semibold">
+        <li>
+          <a href="#" class="text-sky-700 border-b-2 border-sky-700">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-sky-600 transition">About</a>
+        </li>
+        <li>
+          <a href="#skills" class="hover:text-sky-600 transition">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-sky-600 transition">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    {{employee}}
+  </body>
+</html>
